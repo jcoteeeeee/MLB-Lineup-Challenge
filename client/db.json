@@ -1,0 +1,15 @@
+{
+    "Players": [
+        {
+            "name": "Sandy Alcantara",
+            "cost": "$10",
+            "image": "./photos/alcantara.png"
+        },
+
+        {
+            "name": "Shane Bieber",
+            "cost": "$8",
+            "image": "./photos/bieber.png"
+        }       
+    ]
+}
