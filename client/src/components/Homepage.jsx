@@ -23,9 +23,9 @@ const Homepage = () => {
             </div>
 
             <div>
-                <div>
+                <button>
                     New? Create an account
-                </div>    
+                </button>    
             </div>
             
         </div>
