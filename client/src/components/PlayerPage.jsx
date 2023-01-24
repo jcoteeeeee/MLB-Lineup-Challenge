@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import AllPlayers from './AllPlayers'
 
 const PlayerPage = () => {
-    const [players, setPlayers] = ([])
+    const [players, setPlayers] = useState([])
+    const [coinCount, setCoinCount] = useState(200)
 
     //get request
     useEffect(() => {
@@ -11,24 +12,24 @@ const PlayerPage = () => {
             let res = await req.json()
             setPlayers(res)
         }
-        request()
+        request()  
     }, [])
+
+    //function for handling click which will send clicked player to TeamPage 
+    const handleOnClick = () => {
+        console.log('clicked')
+        setCoinCount(coinCount - player.cost)
+    }
 
     return(
         <div>
+            <div>
+                <h3>Coin count: {coinCount}</h3>
+            </div>
             <div id='player-list'>
 
                 <div id='pitchers' className='position'>
-                    {/* {
-                        players.map((player) => {
-                            return(
-                                <div>
-                                    <AllPlayers players={players}/>
-                                </div>
-                            )
-                        })
-                    } */}
-                    <AllPlayers players={players}/>
+                    <AllPlayers players={players} handleOnClick={handleOnClick}/>
                 </div> 
 
                 <div id='catchers' className='position'>
