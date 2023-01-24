@@ -10,6 +10,12 @@
             "name": "Shane Bieber",
             "cost": "$8",
             "image": "./photos/bieber.png"
-        }       
+        }, 
+        
+        {
+            "name": "Kevin Gausman",
+            "cost": "$6",
+            "image": "./photos/gausman.png"
+        }
     ]
 }

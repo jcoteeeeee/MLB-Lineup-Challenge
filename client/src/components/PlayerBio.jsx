@@ -1,4 +1,4 @@
-const PlayerBio = ( player ) => {
+const PlayerBio = ( {player}  ) => {
     return(
         <div>
             <img src={player.image}/>
@@ -7,3 +7,5 @@ const PlayerBio = ( player ) => {
         </div>
     )
 }
+
+export default PlayerBio

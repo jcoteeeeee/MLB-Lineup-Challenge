@@ -1,11 +1,13 @@
-const AllPlayers = ( {players} ) => {
+import PlayerBio from './PlayerBio'
+
+const AllPlayers = ( {players, handleOnClick} ) => {
     return(
-        <div>
+        <div> 
             {
-                players.map((player) => {
+                players.map((player, handleOnClick) => {
                     return (
-                        <div>
-                            <AllPlayers player={player} />
+                        <div onClick={() => {handleOnClick}}>
+                            <PlayerBio player={player} />
                         </div>
                     )
                 })
