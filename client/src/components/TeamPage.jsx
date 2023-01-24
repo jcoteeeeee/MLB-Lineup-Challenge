@@ -2,7 +2,7 @@ const TeamPage = () => {
     return(
         <div>
             <div>
-                <img src='./photos/field'/>
+                <img src='./photos/field.png'/>
             </div>
         </div>
     )
