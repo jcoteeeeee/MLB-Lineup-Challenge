@@ -4,7 +4,7 @@
             "id": 1,
             "position": "Pitcher",
             "name": "Sandy Alcantara",
-            "cost": "$10",
+            "cost": 10,
             "image": "./photos/alcantara.png"
         },
 
@@ -12,7 +12,7 @@
             "id": 2,
             "position": "Pitcher",
             "name": "Shane Bieber",
-            "cost": "$8",
+            "cost": 8,
             "image": "./photos/bieber.png"
         }, 
         
@@ -20,7 +20,7 @@
             "id": 3,
             "position": "Pitcher",
             "name": "Kevin Gausman",
-            "cost": "$6",
+            "cost": 6,
             "image": "./photos/gausman.png"
         },
 
@@ -28,7 +28,7 @@
             "id": 4,
             "position": "Catcher",
             "name": "Will Smith",
-            "cost": "$10",
+            "cost": 10,
             "image": "./photos/will-smith.jpg"
         }
     ]
