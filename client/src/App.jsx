@@ -26,11 +26,16 @@ function App() {
   //function for handling click which will send clicked player in PlayerPage to TeamPage 
   const handleOnClick = (player) => {
     console.log("clicked")
-    setTeam([...team, player])
-    navigate('/teampage')
+    if (team.map(t => t.id).includes(player.id)) return;
+    setTeam([...team, player]) 
     // setCoinCount(coinCount - player.cost)
   }
   console.log(team)
+
+  // function for onClick on View Team button in PlayerPage
+  const  viewTeamClick = () => {
+    navigate('/teampage')
+  }
 
   return (
     <div>
@@ -39,7 +44,7 @@ function App() {
 
         <Route exact path='/signup' element={<Signup/>} />
 
-        <Route exact path='/playerpage' element={<PlayerPage players={players} coinCount={coinCount} handleOnClick={handleOnClick} />} />
+        <Route exact path='/playerpage' element={<PlayerPage players={players} coinCount={coinCount} handleOnClick={handleOnClick} viewTeamClick={viewTeamClick}/>} />
 
         <Route exact path='/teampage' element={<TeamPage team={team}/>} />
 
