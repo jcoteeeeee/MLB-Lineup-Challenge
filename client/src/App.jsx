@@ -26,11 +26,20 @@ function App() {
   //function for handling onClick which will send clicked player in PlayerPage to TeamPage 
   const handleOnClick = (player) => {
     console.log("clicked")
-    if (team.map(t => t.id).includes(player.id)) return;
+    console.log(player.id)
+
+    if (team.map(teamMember => teamMember.id).includes(player.id)) return alert("This player is selected already");
+    if (team.map(teamMember => teamMember.position).includes(player.position)) {
+      const newTeam = team.filter(teamMember => {
+        return teamMember.position !== player.position})
+      console.log(newTeam)
+      setTeam([...newTeam, player])
+      alert("Done")
+      return
+  }
     setTeam([...team, player]) 
     // setCoinCount(coinCount - player.cost)
   }
-  console.log(team)
 
   // function for onClick on View Team button in PlayerPage
   const viewTeamClick = () => {

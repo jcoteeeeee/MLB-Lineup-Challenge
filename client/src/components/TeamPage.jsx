@@ -5,6 +5,15 @@ const TeamPage = ( {team}) => {
             <div>
                 <img src='./photos/field.png'/>
             </div>
+            <div>
+                {
+                    team.map((player) => {
+                        return(
+                            <img src={player.image}/>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
