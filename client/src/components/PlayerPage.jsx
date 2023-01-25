@@ -1,25 +1,7 @@
 // import { useEffect, useState } from 'react'
 import AllPlayers from './AllPlayers'
 
-const PlayerPage = ( {players, coinCount, handleOnClick} ) => {
-    // const [players, setPlayers] = useState([])
-    // const [coinCount, setCoinCount] = useState(200)
-
-    // //get request
-    // useEffect(() => {
-    //     const request = async () => {
-    //         let req = await fetch("http://localhost:3000/players")
-    //         let res = await req.json()
-    //         setPlayers(res)
-    //     }
-    //     request()  
-    // }, [])
-
-    // //function for handling click which will send clicked player to TeamPage 
-    // const handleOnClick = (player) => {
-    //     console.log('clicked')
-    //     // setCoinCount(coinCount - player.cost)
-    // }
+const PlayerPage = ( {players, coinCount, handleOnClick, viewTeamClick } ) => {
 
     return(
         <div>
@@ -64,7 +46,7 @@ const PlayerPage = ( {players, coinCount, handleOnClick} ) => {
             </div>
 
             <div>
-                <button>View Your Team</button>
+                <button onClick={viewTeamClick}>View Your Team</button>
             </div>
         </div>
     )
