@@ -7,9 +7,8 @@ import TeamPage from './components/TeamPage'
 
 
 function App() {
-  // const [page, setPage] = useState("/") // don't remember what this is for 
   const [players, setPlayers] = useState([])
-  const [coinCount, setCoinCount] = useState(200)  
+  const [coins, setCoins] = useState(200)  
   const [team, setTeam] = useState([])
   const navigate = useNavigate()
 
@@ -27,6 +26,9 @@ function App() {
   const handleOnClick = (player) => {
     console.log("clicked")
     console.log(player.id)
+    
+    if (coins - parseInt(player.cost) < 0) return
+    setCoins(coins- parseInt(player.cost))
 
     if (team.map(teamMember => teamMember.id).includes(player.id)) return alert("This player is selected already");
     if (team.map(teamMember => teamMember.position).includes(player.position)) {
@@ -58,7 +60,7 @@ function App() {
 
         <Route exact path='/signup' element={<Signup/>} />
 
-        <Route exact path='/playerpage' element={<PlayerPage players={players} coinCount={coinCount} handleOnClick={handleOnClick} viewTeamClick={viewTeamClick}/>} />
+        <Route exact path='/playerpage' element={<PlayerPage players={players} coins={coins} handleOnClick={handleOnClick} viewTeamClick={viewTeamClick}/>} />
 
         <Route exact path='/teampage' element={<TeamPage team={team}/>} />
 
