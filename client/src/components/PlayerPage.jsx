@@ -11,37 +11,37 @@ const PlayerPage = ( {players, coinCount, handleOnClick, viewTeamClick } ) => {
             <div id='player-list'>
 
                 <div id='pitchers' className='position'>
+                    <h2>Pitchers</h2>
                     <AllPlayers players={players} handleOnClick={handleOnClick}/>
                 </div> 
 
                 <div id='catchers' className='position'>
-
+                    <h2>Catchers</h2>
                 </div> 
 
                 <div id='first-basemen' className='position'>
-
+                    <h2>First Basemen</h2>
                 </div> 
 
                 <div id='second-basemen' className='position'>
-
+                    <h2>Second Basemen</h2>
                 </div> 
 
                 <div id='shortstops' className='position'>
-
+                    <h2>Shortstop </h2>
                 </div> 
 
                 <div id='left-fielders' className='position'>
-
+                    <h2>Leftfielders </h2>
                 </div> 
 
-
                 <div id='center-fielders' className='position'>
-
+                    <h2>Centerfielders </h2>
                 </div>
 
 
                 <div id='right-fielders' className='position'>
-
+                    <h2>Right fielders</h2>
                 </div>
             </div>
 

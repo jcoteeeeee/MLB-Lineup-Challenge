@@ -23,7 +23,7 @@ function App() {
     request()
   }, [])
 
-  //function for handling click which will send clicked player in PlayerPage to TeamPage 
+  //function for handling onClick which will send clicked player in PlayerPage to TeamPage 
   const handleOnClick = (player) => {
     console.log("clicked")
     if (team.map(t => t.id).includes(player.id)) return;
@@ -33,14 +33,19 @@ function App() {
   console.log(team)
 
   // function for onClick on View Team button in PlayerPage
-  const  viewTeamClick = () => {
+  const viewTeamClick = () => {
     navigate('/teampage')
+  }
+
+  // function for create account to go to signup page 
+  const signupClick = () => {
+    navigate('/signup')
   }
 
   return (
     <div>
       <Routes>
-        <Route exact path='/' element={<Homepage/>} />
+        <Route exact path='/' element={<Homepage signupClick={signupClick} />} />
 
         <Route exact path='/signup' element={<Signup/>} />
 
