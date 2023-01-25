@@ -1,4 +1,4 @@
-const PlayerBio = ( {player, handleOnClick}  ) => {
+const PlayerBio = ( {player}  ) => {
     return(
         <div>
             <img src={player.image}/>
@@ -9,5 +9,3 @@ const PlayerBio = ( {player, handleOnClick}  ) => {
 }
 
 export default PlayerBio
-
-

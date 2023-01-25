@@ -1,4 +1,5 @@
-const TeamPage = () => {
+const TeamPage = ( {team}) => {
+    console.log(team)
     return(
         <div>
             <div>

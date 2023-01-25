@@ -4,11 +4,10 @@ const AllPlayers = ( {players, handleOnClick} ) => {
     return(
         <div> 
             {
-                players.map((player) => {
+                players.map((player, handleOnClick) => {
                     return (
-                        <div onClick={() => {
-                            handleOnClick(player)}}>
-                            <PlayerBio player={player} handleOnClick={handleOnClick} />
+                        <div onClick={() => {handleOnClick}}>
+                            <PlayerBio player={player} />
                         </div>
                     )
                 })
