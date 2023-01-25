@@ -1,8 +1,8 @@
-const Homepage = () => {
+const Homepage = ( {signupClick} ) => {
     return(
         <div>
             <div id='title'>
-                MLB Lineup Challenge
+                <h1>MLB Lineup Challenge</h1>  
             </div>
 
             <div>
@@ -23,7 +23,7 @@ const Homepage = () => {
             </div>
 
             <div>
-                <button>
+                <button onClick={signupClick}>
                     New? Create an account
                 </button>    
             </div>
