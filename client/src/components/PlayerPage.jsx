@@ -1,10 +1,14 @@
 // import { useEffect, useState } from 'react'
 import AllPlayers from './AllPlayers'
+import Header from './Header'
 
 const PlayerPage = ( {players, coins, handleOnClick, viewTeamClick } ) => {
 
     return(
         <div>
+            <div>
+                <Header/>
+            </div>
             <div>
                 <h3>{coins} 🪙</h3>
             </div>

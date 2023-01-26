@@ -1,7 +1,12 @@
+import Header from './Header'  
+
 const TeamPage = ( {team}) => {
     console.log(team)
     return(
         <div>
+            <div>
+                <Header/>
+            </div>
             <div>
                 <img src='./photos/field.png'/>
             </div> 

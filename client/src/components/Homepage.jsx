@@ -1,10 +1,11 @@
 import Login from './Login'
+import Header from './Header'
 
 const Homepage = ( {signupClick, handleLoginSubmit } ) => {
     return(
         <div>
             <div id='title'>
-                <h1>MLB Lineup Challenge</h1>  
+                <Header/>
             </div>
 
             <div>
