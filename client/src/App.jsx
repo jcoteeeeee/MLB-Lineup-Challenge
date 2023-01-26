@@ -27,11 +27,12 @@ function App() {
     console.log("clicked")
     console.log(player.id)
     
-    if (coins - parseInt(player.cost) < 0) return
-    setCoins(coins- parseInt(player.cost))
+    // coins 
+    if (coins - parseInt(player.cost) < 0) return // this makes it so coins can't go below 0 
+    setCoins(coins- parseInt(player.cost)) 
 
-    if (team.map(teamMember => teamMember.id).includes(player.id)) return alert("This player is selected already");
-    if (team.map(teamMember => teamMember.position).includes(player.position)) {
+    if (team.map(teamMember => teamMember.id).includes(player.id)) return alert("This player is selected already"); // makes it so you can't pick same player twice 
+    if (team.map(teamMember => teamMember.position).includes(player.position)) { // makes it so you can't pick multiple players from one position. If you pick a second player at the same position, the second player will replace the first player and be the sole player at that position 
       const newTeam = team.filter(teamMember => {
         return teamMember.position !== player.position})
       console.log(newTeam)
