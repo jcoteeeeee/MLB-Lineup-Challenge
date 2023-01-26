@@ -12,9 +12,10 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_26_170537) do
   create_table "players", force: :cascade do |t|
-    t.string "image"
     t.string "name"
-    t.integer "cost"
+    t.string "position"
+    t.string "cost"
+    t.integer "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
