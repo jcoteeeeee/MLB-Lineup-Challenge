@@ -1,0 +1,7 @@
+.background {
+    background-image: url(./photos/field.png);
+    background-size: cover;
+    background-size: 100% vh;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}

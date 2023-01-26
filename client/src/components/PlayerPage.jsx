@@ -6,7 +6,7 @@ const PlayerPage = ( {players, coins, handleOnClick, viewTeamClick } ) => {
     return(
         <div>
             <div>
-                <h3>Coin count: {coins}</h3>
+                <h3>{coins} 🪙</h3>
             </div>
             <div id='player-list'>
                 <AllPlayers players={players} handleOnClick={handleOnClick}/>

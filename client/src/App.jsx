@@ -53,12 +53,25 @@ function App() {
     navigate('/signup')
   }
 
+  const handleLoginSubmit = (e) => {
+    e.preventDefault()
+    navigate('/playerpage')
+  }
+
+  // function to submit signup form to sign up 
+  const handleSignupSubmit = (e) => {
+    e.preventDefault()
+    navigate('/playerpage')
+  }
+
+
+
   return (
     <div>
       <Routes>
-        <Route exact path='/' element={<Homepage signupClick={signupClick} />} />
+        <Route exact path='/' element={<Homepage signupClick={signupClick} handleLoginSubmit={handleLoginSubmit} />} />
 
-        <Route exact path='/signup' element={<Signup/>} />
+        <Route exact path='/signup' element={<Signup handleSignupSubmit={handleSignupSubmit} />} />
 
         <Route exact path='/playerpage' element={<PlayerPage players={players} coins={coins} handleOnClick={handleOnClick} viewTeamClick={viewTeamClick}/>} />
 

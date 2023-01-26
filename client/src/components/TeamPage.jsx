@@ -4,7 +4,7 @@ const TeamPage = ( {team}) => {
         <div>
             <div>
                 <img src='./photos/field.png'/>
-            </div>
+            </div> 
             <div>
                 {
                     team.map((player) => {
