@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_26_205822) do
     t.string "name"
     t.string "position"
     t.string "cost"
-    t.integer "image"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
