@@ -1,10 +1,15 @@
+import Header from './Header'  
+
 const TeamPage = ( {team}) => {
     console.log(team)
     return(
         <div>
             <div>
-                <img src='./photos/field.png'/>
+                <Header/>
             </div>
+            <div>
+                <img src='./photos/field.png'/>
+            </div> 
             <div>
                 {
                     team.map((player) => {

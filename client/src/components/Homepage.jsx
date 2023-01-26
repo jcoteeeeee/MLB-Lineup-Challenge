@@ -1,8 +1,11 @@
-const Homepage = ( {signupClick} ) => {
+import Login from './Login'
+import Header from './Header'
+
+const Homepage = ( {signupClick, handleLoginSubmit } ) => {
     return(
         <div>
             <div id='title'>
-                <h1>MLB Lineup Challenge</h1>  
+                <Header/>
             </div>
 
             <div>
@@ -10,22 +13,11 @@ const Homepage = ( {signupClick} ) => {
             </div>
 
             <div>
-                <form id='login-form'>
-                    <br />
-                    <label>Email: </label>
-                    <input type='email' name='email' />
-                    <br />
-                    <label>Password: </label>
-                    <input type='password' name='password' />
-                    <br />
-                    <button>Login</button>
-                </form>
+                <Login handleLoginSubmit={handleLoginSubmit} />
             </div>
-
+                
             <div>
-                <button onClick={signupClick}>
-                    New? Create an account
-                </button>    
+                <button onClick={signupClick}>New? Create an account</button>    
             </div>
             
         </div>

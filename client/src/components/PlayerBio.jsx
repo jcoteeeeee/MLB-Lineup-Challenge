@@ -3,7 +3,7 @@ const PlayerBio = ( {player, handleOnClick}  ) => {
         <div>
             <img src={player.image}/>
             <h3>{player.name}</h3>
-            <p>{player.cost}</p>
+            <p>{player.cost} 🪙</p>
         </div>
     )
 }
