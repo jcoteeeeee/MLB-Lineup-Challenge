@@ -1,6 +1,7 @@
 // import { useEffect, useState } from 'react'
 import AllPlayers from './AllPlayers'
 import Header from './Header'
+import Footer from './Footer' 
 
 const PlayerPage = ( {players, coins, handleOnClick, viewTeamClick } ) => {
 
@@ -17,6 +18,9 @@ const PlayerPage = ( {players, coins, handleOnClick, viewTeamClick } ) => {
             </div>
             <div>
                 <button onClick={viewTeamClick}>View Your Team</button>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </div>
     )
