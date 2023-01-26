@@ -1,13 +1,11 @@
 import Login from './Login'
-import Header from './Header'
+import Header from './Header'  
+import Footer from './Footer'
 
 const Homepage = ( {signupClick, handleLoginSubmit } ) => {
     return(
         <div>
-            <div id='title'>
-                <Header/>
-            </div>
-
+            <Header/>
             <div>
                 <img src='./photos/ohtani-gif.gif'/>
             </div>
@@ -19,7 +17,9 @@ const Homepage = ( {signupClick, handleLoginSubmit } ) => {
             <div>
                 <button onClick={signupClick}>New? Create an account</button>    
             </div>
-            
+            <div>
+                <Footer/>     
+            </div>
         </div>
     )
 }
