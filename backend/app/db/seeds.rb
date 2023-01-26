@@ -16,9 +16,9 @@ Team.create(user_id: 2, team_name: 'nothing')
 
 # players 
 # pitchers 
-Player.create(name: 'Sandy Alcantara', cost: , image: )
+Player.create(name: 'Sandy Alcantara', cost: , image: './photos/alcantara.png')
 Player.create(name: 'Carlos Rodon', cost: , image: )
-Player.create(name: 'Shane Bieber', cost: , image: )
+Player.create(name: 'Shane Bieber', cost: , image: './photos/bieber.png')
 Player.create(name: 'Kevin Gausman', cost: , image: )
 Player.create(name: 'Ranger Suarez', cost: , image: )
 # catchers
@@ -30,20 +30,20 @@ Player.create(name: 'Jonah Heim', cost: , image: )
 # first base 
 Player.create(name: 'Paul Goldschmidt', cost: , image: )
 Player.create(name: 'Freddie Freeman', cost: , image: )
-Player.create(name: 'Pete Alonso', cost: , image: )
+Player.create(name: 'Pete Alonso', cost: , image: './photos/alonso.png')
 Player.create(name: 'Vladimir Guerrero', cost: , image: )
 Player.create(name: 'Matt Olson', cost: , image: )
 # second base 
-Player.create(name: 'Jose Altuve', cost: , image: )
+Player.create(name: 'Jose Altuve', cost: , image: './photos/altuve.png')
 Player.create(name: 'Jeff McNeil', cost: , image: )
-Player.create(name: 'Andres Gimenez', cost: , image: )
+Player.create(name: 'Andres Gimenez', cost: , image: './photos/andres-gimenez.png')
 Player.create(name: 'Marcus Semien', cost: , image: )
 Player.create(name: 'Gleybor Torres', cost: , image: )
 # shortstop 
 Player.create(name: 'Trea Turner', cost: , image: )
 Player.create(name: 'Francisco Lindor', cost: , image: )
 Player.create(name: 'Carlos Correa', cost: , image: )
-Player.create(name: 'Bo Bichette', cost: , image: )
+Player.create(name: 'Bo Bichette', cost: , image: './photos/bichette.png')
 Player.create(name: 'Jeremy Pena', cost: , image: )
 # third base 
 Player.create(name: 'Manny Machado', cost: , image: )
@@ -59,12 +59,12 @@ Player.create(name: 'Steven Kwan', cost: , image: )
 Player.create(name: 'Christian Yelich', cost: , image: )
 # center field 
 Player.create(name: 'Mike Trout', cost: , image: )
-Player.create(name: 'Julio Rodriguez', cost: , image: )
+Player.create(name: 'Julio Rodriguez', cost: , image: './photos/arozarena.png')
 Player.create(name: 'Brandon Nimmo', cost: , image: )
 Player.create(name: 'Brian Reynolds', cost: , image: )
 Player.create(name: 'Luis Robert', cost: , image: )
 # right field 
-Player.create(name: 'Aaron Judge', cost: , image: )
+Player.create(name: 'Aaron Judge', cost: , image: './photos/aaron-judge.png')
 Player.create(name: 'Mookie Betts', cost: , image: )
 Player.create(name: 'Kyle Tucker', cost: , image: )
 Player.create(name: 'Teoscar Hernandez', cost: , image: )
