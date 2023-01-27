@@ -17,4 +17,5 @@ class TeamsController < ApplicationController
     def destroy
         team = Team.find_by(id: params[:id])
         team.destroy
+    end
 end

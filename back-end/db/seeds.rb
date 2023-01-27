@@ -71,7 +71,7 @@ Player.create(name: 'Teoscar Hernandez', position: 'Rightfielder', cost: 9, imag
 Player.create(name: 'Seiya Suzuki', position: 'Rightfielder', cost: 8, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/4142424.png')
 # designated hitter 
 Player.create(name: 'Yordan Alvarez', position: 'Designated-Hitter', cost: 12, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36018.png')
-Player.create(name: 'Shohei Ohtani', position: 'Designated-Hitter', cost: 11, image: '.https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png')
+Player.create(name: 'Shohei Ohtani', position: 'Designated-Hitter', cost: 11, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39832.png')
 Player.create(name: 'Eloy Jimenez', position: 'Designated-Hitter', cost: 10, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33867.png&w=350&h=254')
 Player.create(name: 'J.D. Martinez', position: 'Designated-Hitter', cost: 9, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31065.png&w=350&h=254')
 Player.create(name: 'Harold Ramirez', position: 'Designated-Hitter', cost: 8, image: 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/33259.png')
