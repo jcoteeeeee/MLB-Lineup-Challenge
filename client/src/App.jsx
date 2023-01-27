@@ -8,7 +8,7 @@ import TeamPage from './components/TeamPage'
 
 function App() {
   const [players, setPlayers] = useState([])
-  const [coins, setCoins] = useState(200)  
+  const [coins, setCoins] = useState(100)  
   const [team, setTeam] = useState([])
   const navigate = useNavigate()
 
