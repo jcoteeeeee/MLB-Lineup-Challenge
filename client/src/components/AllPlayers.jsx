@@ -15,7 +15,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                                     </div>
                                 )
                             }
-                        })
+                        }) 
                     }
             </div>
                 
