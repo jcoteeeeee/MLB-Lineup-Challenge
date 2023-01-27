@@ -7,14 +7,14 @@ const TeamPage = ( {team}) => {
             <div>
                 <Header/>
             </div>
-            <div>
-                <img src='./photos/field.png'/>
+            <div className='div-img'>
+                <img className='field' src='./photos/field.png'/>
             </div> 
-            <div>
+            <div className='field-container'>
                 {
                     team.map((player) => {
                         return(
-                            <img src={player.image}/>
+                            <img className={player.position} src={player.image}/>
                         )
                     })
                 }

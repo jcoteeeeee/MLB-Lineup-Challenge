@@ -4,6 +4,7 @@ import Homepage from './components/Homepage'
 import Signup from './components/Signup'
 import PlayerPage from './components/PlayerPage'
 import TeamPage from './components/TeamPage'
+import './App.css'
 
 
 function App() {

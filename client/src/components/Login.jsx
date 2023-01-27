@@ -5,7 +5,7 @@ const Login = ( {handleLoginSubmit} ) => {
     const [password, setPassword] = useState('')
     
     return(
-        <form id='login-form' onSubmit={handleLoginSubmit}>
+        <form className='login' id='login-form' onSubmit={handleLoginSubmit}>
             <br />
             <label>Email: </label>
             <input type='email' name='email' required onChange={(e) => setEmail(e.target.value)} />

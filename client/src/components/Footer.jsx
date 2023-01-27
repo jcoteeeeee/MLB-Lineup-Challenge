@@ -8,9 +8,9 @@ const Footer = () => {
     }
     return(
         <div>
-            <img id='twitter'src='./photos/twitter-logo.png' onClick={handleClickTwitter} />
+            {/* <img id='twitter'src='./photos/twitter-logo.png' onClick={handleClickTwitter} />
             <img id='instagram' src='./photos/instagram-logo.png' />
-            <img id='facebook' src='./photos/facebook-logo.jpg' />
+            <img id='facebook' src='./photos/facebook-logo.jpg' /> */}
         </div>
     )
 }  

@@ -3,7 +3,7 @@ import PlayerBio from './PlayerBio'
 const AllPlayers = ( {players, handleOnClick} ) => {
     return( 
         <>
-            <div id='pitcher' > 
+            <div className='players-container' id='pitcher' > 
                 <h2>Pitcher</h2>
                     {
                         players.map((player) => {
@@ -19,7 +19,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                     }
             </div>
                 
-            <div id='catcher'>
+            <div className='players-container'  id='catcher'>
                 <h2>Catcher</h2>
                 {
                     players.map((player) => {
@@ -36,7 +36,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='first-base'>
+            <div className='players-container' id='first-base'>
                 <h2>First Basemen</h2>
                 {
                     players.map((player) => {
@@ -53,7 +53,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='second-base'>
+            <div className='players-container' id='second-base'>
                 <h2>Second Basemen</h2>
                 {
                     players.map((player) => {
@@ -70,7 +70,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='shortstop'>
+            <div className='players-container' id='shortstop'>
                 <h2>Shortstop</h2>
                 {
                     players.map((player) => {
@@ -87,7 +87,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>  
 
-            <div id='third-base'>
+            <div className='players-container' id='third-base'>
                 <h2>Third Basemen</h2>
                 {
                     players.map((player) => {
@@ -104,7 +104,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='leftfield'>
+            <div className='players-container' id='leftfield'>
                 <h2>Leftfielders </h2>
                 {
                     players.map((player) => {
@@ -121,7 +121,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='centerfield'>
+            <div className='players-container' id='centerfield'>
                 <h2>Centerfielders </h2>
                 {
                     players.map((player) => {
@@ -138,7 +138,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='rightfield'>
+            <div className='players-container' id='rightfield'>
                 <h2>Rightfielders</h2>
                 {
                     players.map((player) => {
@@ -155,7 +155,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
                 }
             </div>
 
-            <div id='designated-hitter'>
+            <div className='players-container' id='designated-hitter'>
                 <h2>Designated Hitters</h2>
                 {
                     players.map((player) => {

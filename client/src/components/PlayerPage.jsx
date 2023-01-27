@@ -10,14 +10,15 @@ const PlayerPage = ( {players, coins, handleOnClick, viewTeamClick } ) => {
             <div>
                 <Header/>
             </div>
-            <div>
+            <div className='coins'>
                 <h3>{coins} 🪙</h3>
             </div>
             <div id='player-list'>
                 <AllPlayers players={players} handleOnClick={handleOnClick}/>
             </div>
             <div>
-                <button onClick={viewTeamClick}>View Your Team</button>
+ 
+                <button className="button-6" role="button" onClick={viewTeamClick}>View Your Team</button>
             </div>
             <div>
                 <Footer/>
