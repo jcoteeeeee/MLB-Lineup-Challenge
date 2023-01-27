@@ -10,7 +10,7 @@ const Header = () => {
     } 
 
     return(
-        <div>
+        <div className='header'>
             <img src='./photos/mlb-lineup-challenge-logo.png' onClick={handleOnClick} />
         </div>
     )

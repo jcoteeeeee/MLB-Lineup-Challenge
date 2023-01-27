@@ -7,14 +7,14 @@ const Homepage = ( {signupClick, handleLoginSubmit } ) => {
         <div>
             <Header/>
             <div>
-                <img src='./photos/ohtani-gif.gif'/>
+                <img className='background' src='./photos/ohtani-gif.gif'/>
             </div>
 
             <div>
                 <Login handleLoginSubmit={handleLoginSubmit} />
             </div>
                 
-            <div>
+            <div className='new-account'>
                 <button onClick={signupClick}>New? Create an account</button>    
             </div>
             <div>
