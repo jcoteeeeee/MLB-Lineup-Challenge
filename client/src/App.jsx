@@ -38,11 +38,10 @@ function App() {
         return teamMember.position !== player.position})
       console.log(newTeam)
       setTeam([...newTeam, player])
-      alert("Done")
+      // alert("Done")
       return
   }
     setTeam([...team, player]) 
-    // setCoinCount(coinCount - player.cost)
   }
 
   // function for onClick on View Team button in PlayerPage
