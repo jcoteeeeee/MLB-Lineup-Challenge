@@ -4,7 +4,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
     return( 
         <>
             <div className='players-container' id='pitcher' > 
-                <h2>Pitcher</h2>
+                <h2>Pitchers</h2>
                     {
                         players.map((player) => {
                             if (player.position === 'Pitcher'){
@@ -20,7 +20,7 @@ const AllPlayers = ( {players, handleOnClick} ) => {
             </div>
                 
             <div className='players-container'  id='catcher'>
-                <h2>Catcher</h2>
+                <h2>Catchers</h2>
                 {
                     players.map((player) => {
                         if (player.position === 'Catcher') {
